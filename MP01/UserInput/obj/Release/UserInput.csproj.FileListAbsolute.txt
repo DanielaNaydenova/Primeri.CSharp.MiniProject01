@@ -8,3 +8,6 @@ C:\aula\primeri.csharp.miniproject01\MP01\UserInput\bin\Release\normnfkc.nlp
 C:\aula\primeri.csharp.miniproject01\MP01\UserInput\bin\Release\normnfkd.nlp
 C:\aula\primeri.csharp.miniproject01\MP01\UserInput\obj\Release\UserInput.dll
 C:\aula\primeri.csharp.miniproject01\MP01\UserInput\obj\Release\UserInput.pdb
+C:\aula\primeri.csharp.miniproject01\MP01\UserInput\obj\Release\UserInput.csprojResolveAssemblyReference.cache
+C:\aula\primeri.csharp.miniproject01\MP01\UserInput\bin\Release\About.dll
+C:\aula\primeri.csharp.miniproject01\MP01\UserInput\bin\Release\About.pdb

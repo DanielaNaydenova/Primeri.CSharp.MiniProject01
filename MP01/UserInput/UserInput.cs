@@ -4,8 +4,17 @@ namespace UserInput
 {
 	public class UInput
 	{
+		About.Me about = new About.Me ();
+
 		public UInput ()
 		{
+			Console.WriteLine ("Добре дошли в " + about.shortName + "\n" + about.version + "\n");
+
+		}
+
+		public void sayHello ()
+		{
+			
 		}
 
 		public void getUserCommands ()
