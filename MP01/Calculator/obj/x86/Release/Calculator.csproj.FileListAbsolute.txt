@@ -7,3 +7,5 @@ C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput.dll
 C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\UserInput.pdb
 C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\About.dll
 C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\About.pdb
+C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Colors.dll
+C:\aula\primeri.csharp.miniproject01\MP01\Calculator\bin\Release\Colors.pdb
