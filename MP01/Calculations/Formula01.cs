@@ -49,7 +49,7 @@ namespace Calculations
 		public bool runCalculations (string [] _param, out double _result)
 		{
 			try {
-				double _a1 = 0, _b1 = 0,_a2 = 0,_b2 = 0, _h = 0;
+				double _a1 = 0, _b1 = 0, _a2 = 0, _b2 = 0, _h = 0;
 
 				//_param[0] == <име на команда>
 				double.TryParse(_param[1], out _a1);
