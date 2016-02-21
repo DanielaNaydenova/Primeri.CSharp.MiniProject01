@@ -35,10 +35,10 @@ namespace UserInput
 					_c.Result ();	Console.WriteLine ("Kоманда 1\n");*/
 				}
 
-				if (_command.ToLower ().Contains ("команда2"))
+				if (_command.ToLower ().Contains ("въгъл "))	_calc.F02.calc (_command);
 				{
-					_c.Default ();	Console.Write ("Стартирана е ");
-					_c.Result ();	Console.WriteLine ("Kоманда 2\n");
+					/*_c.Default ();	Console.Write ("Стартирана е ");
+					_c.Result ();	Console.WriteLine ("Kоманда 2\n");*/
 				}
 
 				if (_command.ToLower ().Contains ("команда3"))

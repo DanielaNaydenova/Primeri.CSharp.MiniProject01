@@ -8,3 +8,4 @@ C:\aula\primeri.csharp.miniproject01\MP01\Colors\bin\Release\normnfkc.nlp
 C:\aula\primeri.csharp.miniproject01\MP01\Colors\bin\Release\normnfkd.nlp
 C:\aula\primeri.csharp.miniproject01\MP01\Colors\obj\Release\Colors.dll
 C:\aula\primeri.csharp.miniproject01\MP01\Colors\obj\Release\Colors.pdb
+C:\aula\primeri.csharp.miniproject01\MP01\Colors\obj\Release\Colors.csprojResolveAssemblyReference.cache
