@@ -24,6 +24,9 @@ namespace Calculations
 
 				if (param.Length == 4 && !_input.ToLower ().Contains ("-п"))
 				{
+				}else{
+					_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\nда видите синтаксиса на командата.\n");
+				}
 					double _result = 0;
 
 					if (runCalculate (param, out _result))
@@ -31,9 +34,7 @@ namespace Calculations
 						_cl.Default ();		Console.Write ("Обемът на изпъкналия ъгъл е ");
 						_cl.Result ();		Console.Write (_result.ToString ("N2"));
 						_cl.Default ();		Console.WriteLine (" m3\n");
-					}else{
-						_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\n да видите синтаксиса на командата.\n");
-					}
+					
 				}
 
 			}catch{

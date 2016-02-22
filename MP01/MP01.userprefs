@@ -1,12 +1,20 @@
 ﻿<Properties StartupItem="Calculator\Calculator.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calculations\Formula01.cs">
-    <Files>
-      <File FileName="Calculator\Program.cs" Line="1" Column="1" />
-      <File FileName="Calculations\Formula01.cs" Line="64" Column="5" />
-      <File FileName="UserInput\UserInput.cs" Line="32" Column="44" />
-      <File FileName="Colors\ForCLI.cs" Line="23" Column="47" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MP01" expanded="True">
+            <Node name="Calculations" expanded="True" />
+            <Node name="Calculator" expanded="True" />
+            <Node name="Colors" expanded="True" />
+            <Node name="UserInput" expanded="True">
+              <Node name="UserInput.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

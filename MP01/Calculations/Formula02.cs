@@ -22,18 +22,20 @@ namespace Calculations
 					help ();
 				}
 
-				if (param.Length == 4 && !_input.ToLower ().Contains ("-п"))
+				if (param.Length == 4 || _input.ToLower().Contains ("-п"))
 				{
-					double _result = 0;
+				}else{
+					_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\nда видите синтаксиса на командата.\n");
+				}
+
+				double _result = 0;
 
 					if (runCalculate (param, out _result))
 					{
 						_cl.Default ();		Console.Write ("Обемът на вдлъбнатия ъгъл е ");
 						_cl.Result ();		Console.Write (_result.ToString ("N2"));
 						_cl.Default ();		Console.WriteLine (" m3\n");
-					}else{
-						_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\n да видите синтаксиса на командата.\n");
-					}
+					
 				}
 
 			}catch{
