@@ -1,21 +1,6 @@
 ﻿<Properties StartupItem="Calculator\Calculator.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MP01" expanded="True">
-            <Node name="Calculations" expanded="True" />
-            <Node name="Calculator" expanded="True" />
-            <Node name="Colors" expanded="True" />
-            <Node name="UserInput" expanded="True">
-              <Node name="UserInput.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
