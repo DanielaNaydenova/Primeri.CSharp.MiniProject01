@@ -2,6 +2,8 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за формула за обикновена строителна яма.(Формула 1)</summary>
 	public class Formula01
 	{
 		//Библиотеки
@@ -24,7 +26,7 @@ namespace Calculations
 					help ();
 				}
 
-				if (param.Length > 1 && !_userInput.Contains ("-п"))		//-п - за помощ
+				if (param.Length > 0 && !_userInput.Contains ("-п"))		//-п - за помощ
 				{
 					//Изчисления
 					double _result = 0;

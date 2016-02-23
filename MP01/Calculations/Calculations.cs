@@ -12,7 +12,6 @@ namespace Calculations
 		public Formula04 F04 = new Formula04 ();
 		public Formula05 F05 = new Formula05 ();
 
-
 		//Библиотеки
 		private Colors.ForCLI _cl = new Colors.ForCLI ();
 

@@ -10,11 +10,11 @@ namespace Calculations
 		{
 		}
 
-//		Формула за: Канлен изкоп
+//		Формула за: Канaлен изкоп
 ///		Формула: (а + b ) / 2 * h * L
 ///		където:
 //
-//		а и b - горна и долна ширина на профиля
+//		а и b - горна и долна ширина на профилa
 ///		h - височина
 ///		L - дължина
 	
@@ -27,21 +27,20 @@ namespace Calculations
 				if (param.Length > 1 && _input.ToLower().Contains ("-п"))
 				{
 					help ();
-				}
+				} 
 
-				if (param.Length == 6 && !_input.ToLower().Contains ("-п"))
+				if (param.Length > 0 && !_input.ToLower().Contains ("-п"))
 				{
-				}else{
-					_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\nда видите синтаксиса на командата.\n");
-				}
-
-				double _result = 0;
+					double _result = 0;
 
 				if (runCalculate (param, out _result))
 				{
 					_cl.Default ();		Console.Write ("Обемът на каналния изкоп е ");
 					_cl.Result ();		Console.Write (_result.ToString ("N2"));
 					_cl.Default ();		Console.WriteLine (" m3\n");
+				}else{
+					_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\nда видите синтаксиса на командата.\n");
+				}
 
 				}
 
