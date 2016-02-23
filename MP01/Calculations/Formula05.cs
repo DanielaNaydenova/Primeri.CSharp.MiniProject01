@@ -2,9 +2,13 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за формула за изчисляване на канален изкоп.(Формула 05)</summary>
 	public class Formula05
 	{
 		Colors.ForCLI _cl = new Colors.ForCLI ();
+		/// <summary>
+		/// Конструктор на Формула 05</summary>
 
 		public Formula05 ()
 		{
@@ -18,6 +22,9 @@ namespace Calculations
 ///		h - височина
 ///		L - дължина
 	
+		/// <summary>
+		/// Метод за пресмятане на Формула 05</summary>
+		/// <param name="_input">Това е цялата команда с параметри, въведени от потребителя</param>
 		public void calc (string _input)
 		{
 			try
@@ -41,13 +48,16 @@ namespace Calculations
 				}else{
 					_cl.Default ();		Console.WriteLine ("Има грешно въведени параметри. С параметъра '-п' можете\nда видите синтаксиса на командата.\n");
 				}
-
 				}
-
 			}catch{
 			}
 		}
 
+		/// <summary>
+		/// Вътрешен метод за пресмятане на Формула 05, след парсване на командата от потребителя</summary>
+		/// <param name="_param">Това е масив от стрингове, който съдържа командата с параметрите от потребителя</param>
+		/// <param name="_result">В тази променлива ще бъде върнат резултатът от формулата</param>
+		/// <returns>Методът връща true при успешно изпълнение</returns>
 		private bool runCalculate (string [] _param, out double _result)
 		{
 			try
@@ -63,11 +73,12 @@ namespace Calculations
 				return true;
 			}catch{
 			}
-
 			_result = 0;
 			return false;
 		}
 
+		/// <summary>
+		/// Вътрешен метод, показващ синтаксиса на командата в командния ред.</summary>
 		private void help ()
 		{
 			_cl.Result ();	Console.Write ("[кизкоп]");

@@ -3,16 +3,21 @@
 namespace Calculations
 {
 	/// <summary>
-	/// Клас за формула за обикновена строителна яма.(Формула 1)</summary>
+	/// Клас за формула за обикновена строителна яма.(Формула 01)</summary>
 	public class Formula01
 	{
 		//Библиотеки
 		private Colors.ForCLI _c = new Colors.ForCLI ();
+		/// <summary>
+		/// Конструктор на Формула 01</summary>
 
 		public Formula01 () 	//Формула за обикновена строителна яма
 		{
 		}
 
+		/// <summary>
+		/// Метод за пресмятане на Формула 01</summary>
+		/// <param name="_userInput">Това е цялата команда с параметри, въведени от потребителя</param>
 		//Парсване
 		public void calc (string _userInput)
 		{
@@ -39,16 +44,18 @@ namespace Calculations
 					}else{
 						_c.Default();	Console.WriteLine ("Има грешно въведен параметър. Можете да проверите синтаксиса с параметър '-п'\n");
 					}
-
-
 				}
 			} catch {
 			}
 		}
-
-
+			
 		//Изчисление и изписване
-		public bool runCalculations (string [] _param, out double _result)
+		/// <summary>
+		/// Вътрешен метод за пресмятане на Формула 01, след парсване на командата от потребителя</summary>
+		/// <param name="_param">Това е масив от стрингове, който съдържа командата с параметрите от потребителя</param>
+		/// <param name="_result">В тази променлива ще бъде върнат резултатът от формулата</param>
+		/// <returns>Методът връща true при успешно изпълнение</returns>
+		private bool runCalculations (string [] _param, out double _result)
 		{
 			try {
 				double _a1 = 0, _b1 = 0, _a2 = 0, _b2 = 0, _h = 0;
@@ -72,6 +79,8 @@ namespace Calculations
 		}
 	 	 
 		//Помощ за командата
+		/// <summary>
+		/// Вътрешен метод, показващ синтаксиса на командата в командния ред.</summary>
 		private void help ()
 		{		
 			_c.Result ();

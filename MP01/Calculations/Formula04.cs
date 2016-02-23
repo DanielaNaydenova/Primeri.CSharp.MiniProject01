@@ -2,9 +2,13 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за формула за изчисляване на страничен ъгъл.(Формула 04)</summary>
 	public class Formula04
 	{
 		Colors.ForCLI _cl = new Colors.ForCLI ();
+		/// <summary>
+		/// Конструктор на Формула 04</summary>
 
 		public Formula04 ()
 		{
@@ -17,6 +21,9 @@ namespace Calculations
 ///		h - височина
 ///		L - дължина
 
+		/// <summary>
+		/// Метод за пресмятане на Формула 04</summary>
+		/// <param name="_input">Това е цялата команда с параметри, въведени от потребителя</param>
 		public void calc (string _input)
 		{
 			try
@@ -41,13 +48,16 @@ namespace Calculations
 					_cl.Default ();		Console.Write ("Обемът на страничния ъгъл е ");
 					_cl.Result ();		Console.Write (_result.ToString ("N2"));
 					_cl.Default ();		Console.WriteLine (" m3\n");
-
 				}
-
-			}catch{
+				} catch{
 			}
 		}
 
+		/// <summary>
+		/// Вътрешен метод за пресмятане на Формула 04, след парсване на командата от потребителя</summary>
+		/// <param name="_param">Това е масив от стрингове, който съдържа командата с параметрите от потребителя</param>
+		/// <param name="_result">В тази променлива ще бъде върнат резултатът от формулата</param>
+		/// <returns>Методът връща true при успешно изпълнение</returns>
 		private bool runCalculate (string [] _param, out double _result)
 		{
 			try
@@ -62,11 +72,12 @@ namespace Calculations
 				return true;
 			}catch{
 			}
-
 			_result = 0;
 			return false;
 		}
 
+		/// <summary>
+		/// Вътрешен метод, показващ синтаксиса на командата в командния ред.</summary>
 		private void help ()
 		{
 			_cl.Result ();	Console.Write ("[съгъл]");

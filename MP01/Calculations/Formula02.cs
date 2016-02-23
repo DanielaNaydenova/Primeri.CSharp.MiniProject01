@@ -2,14 +2,22 @@
 
 namespace Calculations
 {
+	/// <summary>
+	/// Клас за формула за изчисляване на вдлъбнат ъгъл.(Формула 02)</summary>
 	public class Formula02
 	{
 		Colors.ForCLI _cl = new Colors.ForCLI ();
+		/// <summary>
+		/// Конструктор на Формула 02</summary>
 
 		//Формула за вдлъбнат ъгъл
 		public Formula02 ()
 		{
 		}
+
+		/// <summary>
+		/// Метод за пресмятане на Формула 02</summary>
+		/// <param name="_input">Това е цялата команда с параметри, въведени от потребителя</param>
 
 		public void calc (string _input)
 		{
@@ -35,13 +43,16 @@ namespace Calculations
 						_cl.Default ();		Console.Write ("Обемът на вдлъбнатия ъгъл е ");
 						_cl.Result ();		Console.Write (_result.ToString ("N2"));
 						_cl.Default ();		Console.WriteLine (" m3\n");
-					
 				}
-
 			}catch{
 			}
 		}
 
+		/// <summary>
+		/// Вътрешен метод за пресмятане на Формула 02, след парсване на командата от потребителя</summary>
+		/// <param name="_param">Това е масив от стрингове, който съдържа командата с параметрите от потребителя</param>
+		/// <param name="_result">В тази променлива ще бъде върнат резултатът от формулата</param>
+		/// <returns>Методът връща true при успешно изпълнение</returns>
 		private bool runCalculate (string [] _param, out double _result)
 		{
 			try
@@ -56,12 +67,12 @@ namespace Calculations
 				return true;
 			}catch{
 			}
-
 			_result = 0;
 			return false;
 		}
 
-
+		/// <summary>
+		/// Вътрешен метод, показващ синтаксиса на командата в командния ред.</summary>
 		private void help ()
 		{
 			_cl.Result ();	Console.Write ("[въгъл]");
